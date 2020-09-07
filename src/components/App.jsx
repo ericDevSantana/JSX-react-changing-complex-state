@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
+  // Using complex state Hook
   const [contact, setContact] = useState({
     fName: "",
     lName: "",
@@ -32,6 +33,7 @@ function App() {
     //   }
     // });
 
+    // Getting previous state values
     setContact((prevValue) => {
       return {
         ...prevValue,
